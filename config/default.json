@@ -1,0 +1,4 @@
+{
+  "MONGO_URI": "mongodb://localhost/vidjot",
+  "secretOrKey": "secret"
+}

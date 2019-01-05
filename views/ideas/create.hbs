@@ -1,0 +1,31 @@
+<div class="card card-body">
+  <h3 class="card-title">Video idea</h3>
+  <form action="/ideas/store" method="POST">
+    <div class="form-group">
+      <label for="title">Title</label>
+      <input type="text" class="form-control {{#if errors.title}} is-invalid {{/if}}" id="title" name="title"
+        {{#if title }} value="{{title}}" {{/if}} required>
+
+      {{!-- Validation message --}}
+      {{#if errors.title}}
+      <div class="invalid-feedback">
+        {{errors.title}}
+      </div>
+      {{/if}}
+    </div>
+
+    <div class="form-group">
+      <label for="details">Details</label>
+      <textarea type="text" class="form-control {{#if errors.details}} is-invalid {{/if}}" id="details" name="details" required>{{#if details}}{{details}}{{/if}}</textarea>
+
+      {{!-- Validation message --}}
+      {{#if errors.details}}
+      <div class="invalid-feedback">
+        {{errors.details}}
+      </div>
+      {{/if}}
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>

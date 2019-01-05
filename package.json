@@ -1,0 +1,39 @@
+{
+  "name": "vidjot",
+  "version": "1.0.0",
+  "description": "App to create video ideas",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app",
+    "dev": "@powershell -Command $env:DEBUG='app:*'; nodemon app"
+  },
+  "engines": {
+    "node": "8.11.1"
+  },
+  "author": "Mohammad mohiuddin mostafa kamal akib <mohiuddinmostafakamal@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "compression": "^1.7.3",
+    "config": "^3.0.1",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.3",
+    "cookie-session": "^2.0.0-beta.3",
+    "debug": "^4.1.1",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "helmet": "^3.15.0",
+    "joi": "^14.3.1",
+    "joi-password-complexity": "^2.0.1",
+    "lodash": "^4.17.11",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.4.1",
+    "mongoose-timestamp": "^0.6.0",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "morgan": "^1.9.1",
+    "nodemon": "^1.18.9"
+  }
+}
