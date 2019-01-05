@@ -1,4 +1,4 @@
 {
-  "MONGO_URI": "mongodb://md mohiuddin akib:MyCITrollis17020411@ds149744.mlab.com:49744/vidjot",
+  "MONGO_URI": "mongodb://localhost/vidjot-prod",
   "secretOrKey": "MyVidjotApp"
 }
